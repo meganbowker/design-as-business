@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Design as Business, Worldwide</title>
+  <meta name="description" content="Design as Business, Worldwide — New York City · Ho Chi Minh City · Willow Alaska." />
+  <style>
+    :root{
+      --text-size: clamp(14px, 1vw + 12px, 20px);
+      --leading: 1.4;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, -apple-system, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+      font-size: var(--text-size);
+      line-height: var(--leading);
+      color: #111;
+      background: #fff;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .container { width: min(1000px, 92vw); margin: 0 auto; text-align: center; }
+    .stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6em;
+      margin: 2.2rem 0 1rem;
+    }
+    .globe {
+      display: block;
+      width: min(560px, 70vw);
+      height: auto;
+      margin: 2rem auto;
+    }
+    footer .stack { margin: 1rem 0 2.2rem; }
+    .stack p::before, .stack p::after { content: none !important; }
+    .stack p { text-shadow: none; margin: 0; }
+    @media (max-width: 600px){
+      .stack { gap: 0.5em; }
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <div class="stack" role="group" aria-label="Locations">
+      <p>Design as business, worldwide:</p>
+      <p>New York City</p>
+      <p>Ho Chi Minh City</p>
+      <p>Willow Alaska</p>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <!-- The ONLY image on the page -->
+    <img class="globe" src="globe.svg" alt="Azimuthal world globe centered on the Arctic." />
+  </main>
+
+  <footer class="container">
+    <div class="stack">
+      <p>Brand design takes on “growth marketing” the next era of “commercial art” embracing emergent technology incubating design-led global</p>
+      <p>brands with equal parts insight and intuition executing with human-led design</p>
+      <p>[ services not for solicitation ]</p>
+    </div>
+  </footer>
+</body>
+</html>
